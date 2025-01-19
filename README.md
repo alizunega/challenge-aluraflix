@@ -76,7 +76,7 @@ src/
 ## 🌐 Despliegue en Vercel
 
 El proyecto será desplegado en Vercel, facilitando su acceso en línea. Una vez desplegado, puedes acceder al proyecto utilizando el siguiente enlace:
-https://aluratube.vercel.app
+[AluraTube](https://challenge-aluraflix-seven.vercel.app/)
 
 ---
 
