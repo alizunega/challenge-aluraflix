@@ -19,30 +19,36 @@ Este desafío está diseñado para reforzar tus conocimientos en React, abarcand
 
 ## 📦 Instalación
 
-Sigue estos pasos para configurar el proyecto en tu entorno local:
+Sigue estos pasos para configurar el proyecto en tu entorno local:    
 
-1. Clona este repositorio:
+1. Clona este repositorio:    
    ```bash  git clone https://github.com/ali-zunega/challenge-aluraflix.git ```
    
-2. Ingresa al directorio del proyecto:
+2. Ingresa al directorio del proyecto:    
   ```cd challenge-aluraflix```
 
-3. Instala las dependencias del proyecto:
+3. Instala las dependencias del proyecto:    
   ```npm install```
 
-4. Inicia el servidor de desarrollo:
+4. Inicia el servidor de desarrollo:    
   ```npm run dev```
 
-5. Se abrirá el proyecto en tu navegador por defecto, sino puedes abrir la siguiente dirección:
+5. Se abrirá el proyecto en tu navegador por defecto, sino puedes abrir la siguiente dirección:    
    ```localhost: 3000```
 
 ---
 
 ## 🛠️ Tecnologías Utilizadas
-```
-<ul>
 
-</ul>
+<div>
+    <p>React, JavaScript, Vite, Material UI </p>
+  <a href="https://skillicons.dev">
+    <img src="https://skillicons.dev/icons?i=react,js,vite,materialui&theme=dark" />
+  </a>
+</div>
+
+
+```
 React: Librería principal para construir la interfaz de usuario.
 Vite: Herramienta rápida y ligera para el desarrollo de proyectos en React.
 Material UI: Biblioteca de componentes para el diseño de la interfaz.
@@ -55,15 +61,14 @@ Vercel: Plataforma para el despliegue del proyecto.
 ---
 
 ## 📂 Estructura del Proyecto
+
 ```
 src/
-├── components/       # Componentes reutilizables (botones, formularios, etc.)
-├── pages/            # Páginas principales de la aplicación (Inicio, Registro, etc.)
-├── context/          # Context API para manejar estados globales.
-├── services/         # Configuración y manejo de la API (axios).
-├── styles/           # Archivos de estilos personalizados.
-├── App.jsx           # Componente raíz de la aplicación.
-└── main.jsx          # Punto de entrada principal.
+├── components/       
+├── pages/           
+├── context/          
+├── App.jsx        
+└── main.jsx          
 
 ```
 ---
@@ -80,6 +85,7 @@ https://aluratube.vercel.app
 El proyecto utiliza MockAPI para manejar los datos de los videos. Si deseas, cuentas con un archivo json (```db.json```) para trabajar con el de forma local. Recuerda hacer las modificaciones correspondientes.
 
 Ejemplo de la estructura de un video:
+
 ```
 {
   "id": "1",
@@ -100,8 +106,8 @@ Este proyecto está bajo la licencia MIT.
 
 ## 📬 Contacto
 
-Si tienes preguntas o sugerencias sobre este proyecto, no dudes en contactarme:
+- Alicia Zuñega - [@alizunega](https://github.com/alizunega)
 
-GitHub: @ali-zunega
-Email: ali.zunega@gmail.com
+
+
 
