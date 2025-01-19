@@ -8,11 +8,10 @@ const StyledFooter = styled("footer")({
   backgroundColor: "transparent",
   padding: "20px",
   display: "flex",
-  justifyContent: "space-evenly",
+  justifyContent: "space-between",
   alignItems: "center",
   flexDirection: "row",
   bottom: 0,
-  position: "fixed",
   width: "100%",
 });
 
@@ -31,7 +30,7 @@ const StyledSocialList = styled("ul")({
 
 const StyledLink = styled("a")({
   textDecoration: "none",
-  color: "#000",
+  color: "#d1f1fd",
   display: "flex",
   alignItems: "center",
   gap: "0.7em", // Espacio entre el ícono y el texto
@@ -45,6 +44,12 @@ const StyledText = styled("h4")({
   alignItems: "center",
   gap: "0.6em",
 });
+
+const StyledImg =styled("img")({
+  width: "6em",
+  right: 0,
+  bottom: 0
+})
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -85,6 +90,7 @@ const Footer = () => {
         Desarrollado por Alicia <CopyrightOutlinedIcon />
         {currentYear}
       </StyledText>
+      <StyledImg src="./iconos/logo-wb.png" />
     </StyledFooter>
   );
 };

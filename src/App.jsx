@@ -1,25 +1,41 @@
-import Footer from './components/Footer';
-import Header from './components/Header';
-import { styled } from '@mui/material/styles';
+
+import "./index.css"
+import Footer from "./components/Footer";
+import Header from "./components/Header";
+import Main from "./pages/Home";
+import Form from "./pages/Form";
+import { styled } from "@mui/material/styles";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { GlobalProvider } from "../src/context/GlobalContext";
+
+
 
 const BackgroundGradient = styled("div")({
-  backgroundImage:" linear-gradient(to right bottom, #a1a4f5, #9ba5f3, #95a6f1, #90a6ee, #8ba7eb, #84a3eb, #7d9eec, #759aec, #6b8eef, rgb(101, 130, 240), #6275f0, #6367ef);",
-  height: "100dvh",
+//  backgroundColor:"#020201",
+  minHeight: "100vh",
   width: "100dvw",
   display: "flex",
-  justifyContent: "center",
+  flexDirection: "column",
+  justifyContent: "space-between",
   alignItems: "center",
-  color: "white",
-
-})
+  // color: "white",
+});
 
 const App = () => (
   <BackgroundGradient>
-    <Header />
-    <h1>Hola Vite</h1>
-
-    <Footer  />
-  </BackgroundGradient>
+    <Router>
+      <GlobalProvider>
+        <Header />
+        <div style={{ flex: 1, width: "100%" }}>
+          <Routes>
+            <Route path="/" element={<Main />} />
+            <Route path="/add" element={<Form />} />
+          </Routes>
+        </div>
+        <Footer />
+      </GlobalProvider>
+    </Router>
+</BackgroundGradient>
 );
 
-export default App
+export default App;

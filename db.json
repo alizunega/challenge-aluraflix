@@ -1,0 +1,134 @@
+{
+    "categorias": [
+        {
+            "id": "1",
+            "nombre": "Musica"
+        },
+        {
+            "id": "2",
+            "nombre": "Deportes"
+        },
+        {
+            "id": "3",
+            "nombre": "Videojuegos"
+        },
+        {
+            "id": "4",
+            "nombre": "Noticias"
+        },
+        {
+            "id": "5",
+            "nombre": "Entretenimiento"
+        },
+        {
+            "id": "6",
+            "nombre": "Educacion"
+        }
+    ],
+    "videos": [
+        {
+            "id": "1",
+            "title": "Indio en Concierto - Estadio Único de La Plata [2008]",
+            "description": "Fecha de estreno: 21 ago 2021 - Indio en Concierto Full HD - Estadio Único de La Plata 2008 - Completo en Full HD",
+            "url": "https://www.youtube.com/watch?v=JMzihl_sStA",
+            "img": "https://img.youtube.com/vi/JMzihl_sStA/maxresdefault.jpg",
+            "categoria": "Musica"
+        },
+        {
+            "id": "2",
+            "title": "Real Madrid ● Camino a la Victoria - Champions League 2024 ",
+            "description": "Revive el camino del Real Madrid en la Champions League desde la primera jornada hasta ser campeones, con narración en español. ",
+            "url": "https://www.youtube.com/watch?v=_48I_WKYqRc",
+            "img": "https://img.youtube.com/vi/_48I_WKYqRc/maxresdefault.jpg",
+            "categoria": "Deportes"
+        },
+        {
+            "id": "3",
+            "title": "Fortnite Chapter 2 Remix PS4 Controller",
+            "description": "50 Elimination Solo Vs Squads Gameplay Wins",
+            "url": "https://www.youtube.com/watch?v=KNmCxrSqzyg",
+            "img": "https://img.youtube.com/vi/KNmCxrSqzyg/maxresdefault.jpg",
+            "categoria": "Videojuegos"
+        },
+        {
+            "id": "4",
+            "title": "CRÓNICA EN VIVO LAS 24 HORAS",
+            "description": "Noticias de última hora en vivo.",
+            "url": "https://www.youtube.com/watch?v=avly0uwZzOE",
+            "img": "https://img.youtube.com/vi/avly0uwZzOE/maxresdefault.jpg",
+            "categoria": "Noticias"
+        },
+        {
+            "id": "5",
+            "title": "Deadpool & Wolverine | Tráiler Oficial",
+            "description": "Trailer de la nueva película Deadpol & Wolverine de Marvel Studios.",
+            "url": "https://www.youtube.com/watch?v=UzFZR2dRsSY",
+            "img": "https://img.youtube.com/vi/UzFZR2dRsSY/maxresdefault.jpg",
+            "categoria": "Entretenimiento"
+        },
+        {
+            "id": "6",
+            "title": "¿Por qué utilizar React?",
+            "description": "En el Alura.tips de hoy platicaremos con Harland Lohora, instructor Front End en la plataforma de Alura Latam, sobre la librería JS de React. ",
+            "url": "https://www.youtube.com/watch?v=MnBNPA45NW8",
+            "img": "https://img.youtube.com/vi/MnBNPA45NW8/maxresdefault.jpg",
+            "categoria": "Educacion"
+        },
+        {
+            "id": "7",
+            "title": "¿Cuáles son las principales áreas de la programación?",
+            "description": "Video de Alura Latam donde explicamos las principales áreas de la programación.",
+            "url": "https://www.youtube.com/watch?v=03cxUlwLVt4",
+            "img": "https://img.youtube.com/vi/03cxUlwLVt4/maxresdefault.jpg",
+            "categoria": "Educacion"
+        },
+        {
+            "id": "8",
+            "title": "Detección de intruso con IA",
+            "description": "Video de Alura Latam donde explicamos como evitar el robo de un vehículo con IA.",
+            "url": "https://www.youtube.com/watch?v=5T_Q_NtNLZE",
+            "img": "https://img.youtube.com/vi/5T_Q_NtNLZE/maxresdefault.jpg",
+            "categoria": "Educacion"
+        },
+        {
+            "id": "9",
+            "title": "Swamp Thing | Full Trailer | DC Universe | The Ultimate Membership",
+            "description": "SWAMP THING sigue a Abby Arcane mientras investiga lo que parece ser un virus mortal nacido en un pantano en un pequeño pueblo de Luisiana. Basado en los personajes de DC escritos y dibujados originalmente por Len Wein y Bernie Wrightson.",
+            "url": "https://www.youtube.com/watch?v=xVnHZ5SF1Jg",
+            "img": "https://img.youtube.com/vi/xVnHZ5SF1Jg/maxresdefault.jpg",
+            "categoria": "Entretenimiento"
+        },
+        {
+            "id": "10",
+            "title": "Radio Galactika Media - En vivo.",
+            "description": "Noticias en vivo de Radio Galactika Media.",
+            "url": "https://www.youtube.com/watch?v=mLRTCaMQ2QA",
+            "img": "https://img.youtube.com/vi/mLRTCaMQ2QA/maxresdefault.jpg",
+            "categoria": "Noticias"
+        },
+        {
+            "id":"11",
+            "title":"Incubus - Dig (Official Music Video)",
+            "description": "Incubus' official music video for 'Dig'",
+            "url":"https://www.youtube.com/watch?v=nMsZ6wkZWhA",
+            "img": "https://img.youtube.com/vi/nMsZ6wkZWhA/maxresdefault.jpg",
+            "categoria":"Musica"
+        },
+        {
+            "id":"12",
+            "title":"LIVERPOOL NO PARA de GANAR. Vence 1-0 a Girona con GOL de Mohamed Salah | UEFA Champions League",
+            "description": "Con un gol solitario de Mohamed Salah, el Liverpool le ganó 1-0 a Girona y sigue al tope de la tabla en la UEFA Champions League. #championsleague | Girona vs Liverpool | Liverpool vs Girona | ESPN Deportes1",
+            "url":"https://www.youtube.com/watch?v=VShwdUhRej8",
+            "img": "https://img.youtube.com/vi/VShwdUhRej8/maxresdefault.jpg",
+            "categoria":"Deportes"
+        },
+        {
+            "id":"13",
+            "title":"Fortnite Chapter 2 Remix PS4 Controller",
+            "description": "50 Elimination Solo Vs Squads Gameplay Wins",
+            "url":"https://www.youtube.com/watch?v=KNmCxrSqzyg",
+            "img": "https://img.youtube.com/vi/KNmCxrSqzyg/maxresdefault.jpg",
+            "categoria":"Videojuegos"
+        }
+    ]
+}
