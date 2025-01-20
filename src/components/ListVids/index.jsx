@@ -1,6 +1,7 @@
 import React, { useContext } from "react";
 import { GlobalContext } from "../../context/GlobalContext";
 import { Divider, Card, CardContent, CardActions, Typography, CardMedia, CircularProgress, Button } from "@mui/material";
+
 import Grid from '@mui/material/Grid2'
 import EditIcon from '@mui/icons-material/Edit';
 import DeleteForeverIcon from '@mui/icons-material/DeleteForever';
@@ -75,9 +76,9 @@ const ListVids = () => {
                   >{video.title}</Typography>
 
                   <Divider sx={styleBorder} />
-                  <Typography variant="body3">{video.description}</Typography>
+                  <Typography variant="caption">{video.description}</Typography>
                   <Divider sx={styleBorder} />
-                  <Typography variant="body2" >{video.categoria}</Typography>
+                  <Typography variant="body2" > {video.categoria} </Typography>
                 </CardContent>
                 <CardActions sx={{ display: "flex", justifyContent: "space-around", mt: "auto" }}>
                   <Button

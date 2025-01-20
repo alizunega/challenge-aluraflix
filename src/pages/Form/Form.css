@@ -10,6 +10,12 @@
 h4.form-title{
     text-align :center;
     color: "white";
+    width: 100%;
+}
+
+div.div-title{
+    display: flex;
+    flex-direction: row;
 }
 
 @media screen and (max-width: 700px) {

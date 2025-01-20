@@ -1,18 +1,25 @@
 import * as React from "react";
+
 import './Form.css'
 import '../../index.css'
 import DeleteIcon from "@mui/icons-material/Delete";
+
+import CloseIcon from '@mui/icons-material/Close'
 import AddIcon from "@mui/icons-material/Add";
-import { FormControl, Button, Select, MenuItem, InputLabel, TextField, Box, Container, Typography } from "@mui/material";
+import { FormControl, Button, Select, MenuItem, InputLabel, TextField, Box, Container, Typography, IconButton } from "@mui/material";
+
+
 
 import { GlobalContext } from "../../context/GlobalContext";
-import { margin } from "@mui/system";
+
+
 
 
 const Form = () => {
 
-  const { categoryState, handleSubmit } = React.useContext(GlobalContext);
+  const { categoryState, handleSubmit, routesState } = React.useContext(GlobalContext);
   const { categorias } = categoryState;
+  const { goToHome } = routesState;
 
   //manejo de formulario de carga
 
@@ -21,7 +28,7 @@ const Form = () => {
   const [url, setUrl] = React.useState("")
   const [categoriaSeleccionada, setCategoria] = React.useState("");
   const [prevImage, setPrevImage] = React.useState("");
-  
+
   const extractVideoId = (url) => {
     try {
       const urlObj = new URL(url);
@@ -42,7 +49,7 @@ const Form = () => {
     if (url) {
 
       const videoId = extractVideoId(url);
-      console.log("id del video: ", videoId )
+      console.log("id del video: ", videoId)
 
       if (videoId) {
         setPrevImage(`https://img.youtube.com/vi/${videoId}/maxresdefault.jpg`);
@@ -50,9 +57,9 @@ const Form = () => {
         setPrevImage("");
       }
     }
-    
+
     console.log("link a vista previa: ", prevImage);
-    
+
   }
 
   const handleLimpieza = () => {
@@ -63,25 +70,27 @@ const Form = () => {
   }
 
 
-  const inputStyle = (theme)=>({
-    width:"57ch",
+  const inputStyle = (theme) => ({
+    width: "57ch",
     m: 1,
-    [theme.breakpoints.down("md")]:{
+    [theme.breakpoints.down("md")]: {
       width: "100%",
     }
   })
 
-  const selectStyle = (theme)=>({
+  const selectStyle = (theme) => ({
     width: "57ch",
     m: "1",
     textAlign: "left",
 
-    [theme.breakpoints.down("md")]:{
-      width: "50ch",
+    [theme.breakpoints.down("md")]: {
+      width: "57ch",
+      marginLeft:".5em"
     },
 
-    [theme.breakpoints.down("sm")]:{
-      width: "45ch",
+    [theme.breakpoints.down("sm")]: {
+      width: "49ch",
+      marginLeft:".5em"
     }
   })
 
@@ -104,7 +113,7 @@ const Form = () => {
           "& .MuiTextField-root": inputStyle,
           border: ".1em solid #515151",
           borderRadius: ".5em",
-          padding: "2em",
+          padding: "1em",
           height: "100%"
         }}
         noValidate
@@ -112,7 +121,24 @@ const Form = () => {
       >
 
         <div >
+          <div className="div-title">
           <Typography variant="h4" className="form-title">Nuevo Video</Typography>
+            <IconButton
+              aria-label="close"
+              onClick={goToHome}
+              sx={(theme) => ({
+                justifyContent: "right",
+                position: 'relative',
+                right: 0,
+                top: 0,
+                color: "white",
+              })}
+            >
+              <CloseIcon />
+            </IconButton>
+        
+
+          </div>
           <TextField
             required
             id="titulo"
@@ -144,6 +170,7 @@ const Form = () => {
           />
           <TextField
             required
+            multiline
             id="descripcion"
             name="description"
             label="Descripcion"
