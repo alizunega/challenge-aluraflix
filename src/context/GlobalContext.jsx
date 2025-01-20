@@ -15,7 +15,7 @@ const GlobalProvider = ({ children }) => {
 
 // manejo de carga de nuevo video 
   const handleSubmit = async (dataForm) => {
-    console.log("Datos formulario: ", dataForm)
+    // console.log("Datos formulario: ", dataForm)
 
     try {
 
@@ -38,9 +38,9 @@ const GlobalProvider = ({ children }) => {
   }
 
 
-  useEffect(() => {
-    console.log("lista de videos, actualizada:", videos)
-  }, [videos])
+  // useEffect(() => {
+  //   console.log("lista de videos, actualizada:", videos)
+  // }, [videos])
 
 
   //manejo de la eliminacion de videos
@@ -71,9 +71,9 @@ const GlobalProvider = ({ children }) => {
 
   }
 
-  useEffect(() => {
-    console.log("lista de videos, actualizada:", videos)
-  }, [videos])
+  // useEffect(() => {
+  //   console.log("lista de videos, actualizada:", videos)
+  // }, [videos])
 
 
 const handleEdit = async (updatedVideo) => {

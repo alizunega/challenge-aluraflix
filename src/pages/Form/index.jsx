@@ -1,10 +1,13 @@
 import * as React from "react";
+import './Form.css'
 import '../../index.css'
 import DeleteIcon from "@mui/icons-material/Delete";
 import AddIcon from "@mui/icons-material/Add";
 import { FormControl, Button, Select, MenuItem, InputLabel, TextField, Box, Container, Typography } from "@mui/material";
 
 import { GlobalContext } from "../../context/GlobalContext";
+import { margin } from "@mui/system";
+
 
 const Form = () => {
 
@@ -44,15 +47,13 @@ const Form = () => {
       if (videoId) {
         setPrevImage(`https://img.youtube.com/vi/${videoId}/maxresdefault.jpg`);
       } else {
-        setPrevImage(""); // Limpia la vista previa si la URL no es válida
+        setPrevImage("");
       }
     }
     
     console.log("link a vista previa: ", prevImage);
     
   }
-
-
 
   const handleLimpieza = () => {
     setTitle("")
@@ -62,7 +63,27 @@ const Form = () => {
   }
 
 
-  const inputStyle = { m: 1, width: "57ch", autoWidth: 'auto' };
+  const inputStyle = (theme)=>({
+    width:"57ch",
+    m: 1,
+    [theme.breakpoints.down("md")]:{
+      width: "100%",
+    }
+  })
+
+  const selectStyle = (theme)=>({
+    width: "57ch",
+    m: "1",
+    textAlign: "left",
+
+    [theme.breakpoints.down("md")]:{
+      width: "50ch",
+    },
+
+    [theme.breakpoints.down("sm")]:{
+      width: "45ch",
+    }
+  })
 
   // console.log(categorias);
 
@@ -91,7 +112,7 @@ const Form = () => {
       >
 
         <div >
-          <Typography variant="h4" align="center" color="white">Nuevo Video</Typography>
+          <Typography variant="h4" className="form-title">Nuevo Video</Typography>
           <TextField
             required
             id="titulo"
@@ -147,7 +168,7 @@ const Form = () => {
               onChange={(e) => {
                 setCategoria(e.target.value)
               }}
-              sx={{ m: 1, width: "57ch", textAlign: "left" }}
+              sx={selectStyle}
 
             >
               <MenuItem value="default"><em>Selecciona una Categoria</em></MenuItem>
@@ -167,14 +188,7 @@ const Form = () => {
           </FormControl>
         </div>
 
-        <div
-          style={{
-            display: "flex",
-            gap: "1.5em",
-            justifyContent: "space-around",
-            paddingTop: "1em",
-          }}
-        >
+        <div className="buttons-div" >
           <Button
             variant="contained"
             type="submit"

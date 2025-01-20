@@ -1,0 +1,28 @@
+  
+.buttons-div{
+    display: flex;
+    gap: 1.5em;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-top: 1em;
+}
+
+h4.form-title{
+    text-align :center;
+    color: "white";
+}
+
+@media screen and (max-width: 700px) {
+    
+    .buttons-div{
+        flex-direction: column;
+        width: 100%;
+        gap: .8em;
+
+    }
+
+    h4.form-title{
+        font-size: 1.5em;
+    }
+    
+}

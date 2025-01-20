@@ -13,7 +13,7 @@ const Banner = () => {
         marginTop: "-10em",
         width: "100%", 
         height: "auto", 
-        maxHeight: "400px", 
+        maxHeight: "30dvh", 
         objectFit: "cover", 
       }}
     />

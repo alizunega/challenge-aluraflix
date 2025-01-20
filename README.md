@@ -22,23 +22,23 @@ Este desafío está diseñado para reforzar tus conocimientos en React, abarcand
 Sigue estos pasos para configurar el proyecto en tu entorno local:    
 
 1. Clona este repositorio:    
-   ```bash  git clone https://github.com/ali-zunega/challenge-aluraflix.git ```
+   ``` git clone https://github.com/ali-zunega/challenge-aluraflix.git ```    
    
 2. Ingresa al directorio del proyecto:    
-  ```cd challenge-aluraflix```
+  ``` cd challenge-aluraflix ```     
 
-3. Instala las dependencias del proyecto:    
-  ```npm install```
+3. Instala las dependencias del proyecto:     
+  ``` npm install ```     
 
-4. Inicia el servidor de desarrollo:    
-  ```npm run dev```
+4. Inicia el servidor de desarrollo:      
+  ``` npm run dev ```    
 
-5. Se abrirá el proyecto en tu navegador por defecto, sino puedes abrir la siguiente dirección:    
-   ```localhost: 3000```
+5. Se abrirá el proyecto en tu navegador por defecto, sino puedes abrir la siguiente dirección:       
+   ``` localhost: 3000 ```    
 
 ---
 
-## 🛠️ Tecnologías Utilizadas
+## 🛠️ Tecnologías Utilizadas    
 
 <div>
     <p>React, JavaScript, Vite, Material UI </p>
@@ -60,7 +60,7 @@ Vercel: Plataforma para el despliegue del proyecto.
 
 ---
 
-## 📂 Estructura del Proyecto
+## 📂 Estructura del Proyecto    
 
 ```
 src/
@@ -73,15 +73,15 @@ src/
 ```
 ---
 
-## 🌐 Despliegue en Vercel
+## 🌐 Despliegue en Vercel    
 
-El proyecto será desplegado en Vercel, facilitando su acceso en línea. Una vez desplegado, puedes acceder al proyecto utilizando el siguiente enlace:
+El proyecto será desplegado en Vercel, facilitando su acceso en línea. Una vez desplegado, puedes acceder al proyecto utilizando el siguiente enlace:    
 
 [AluraTube](https://challenge-aluraflix-seven.vercel.app/)
 
 ---
 
-## 🔗 API MockAPI
+## 🔗 API MockAPI     
 
 El proyecto utiliza MockAPI para manejar los datos de los videos. Si deseas, cuentas con un archivo json (```db.json```) para trabajar con el de forma local. Recuerda hacer las modificaciones correspondientes.
 
