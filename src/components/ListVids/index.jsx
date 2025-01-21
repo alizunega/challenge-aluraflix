@@ -1,11 +1,12 @@
 import React, { useContext } from "react";
 import { GlobalContext } from "../../context/GlobalContext";
-import { Divider, Card, CardContent, CardActions, Typography, CardMedia, CircularProgress, Button } from "@mui/material";
+import { Divider, Card, CardContent, CardActions, Typography, CardMedia, Button } from "@mui/material";
 
 import Grid from '@mui/material/Grid2'
 import EditIcon from '@mui/icons-material/Edit';
 import DeleteForeverIcon from '@mui/icons-material/DeleteForever';
 import Loading from "./Loading";
+
 
 const ListVids = () => {
   const { modalState, error, categoryState, handleDelete } = useContext(GlobalContext);
@@ -20,11 +21,19 @@ const ListVids = () => {
   }
 
 
-  if (error) return (
-    <div>
-      <Typography color="error">{error}</Typography>
-    </div>
-  );
+
+  if (error) {
+    return (
+      <div >
+        <Typography
+          variant="h5"
+          color="error"
+          mt="2em" 
+          align="center" 
+          >{error}</Typography>
+      </div>
+    );
+  }
 
   //https://img.youtube.com/vi/<videoId>/maxresdefault.jpg\
 
@@ -36,8 +45,8 @@ const ListVids = () => {
       justifyContent={"center"}>
       {
         filteredVideos.length === 0 ?
-          <Loading  />
-         : (filteredVideos.map((video) => (
+          <Loading />
+          : (filteredVideos.map((video) => (
             <Grid component="div" xs={4} sm={4} md={4} key={video.id}
             >
               <Card sx={{

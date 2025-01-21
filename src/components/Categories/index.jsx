@@ -34,7 +34,7 @@ const CategoryFilter = () => {
       {categorias.map((categoria) => (
         <Button
           sx={{
-            backgroundColor: selectedCategory === categoria.nombre ? "#c9545f" : "custom.main",
+            backgroundColor: selectedCategory === categoria.nombre ? "#803bf7" : "custom.main",
             color:"custom.contrastText",
             fontWeight: {
               md:"600",
@@ -47,7 +47,7 @@ const CategoryFilter = () => {
             } ,
 
             "&:hover": {
-              backgroundColor: "#db4f60",
+              backgroundColor: "#803bf7",
               // Cambiar el color al hacer hover
             },
           }}

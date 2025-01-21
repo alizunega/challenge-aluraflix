@@ -20,11 +20,21 @@ const darkTheme = createTheme({
       secondary: "#b0b0b0",
     },
     custom:{
-      main:"#FF7D95",
-      contrastText: "#000000",
+      main:"#546fc9",
+      contrastText: "#efeff7",
+      error: "#ff0000",
     }
   },
   typography: {
+    fontFamily: "var(--font-cuerpo)", 
+    h1: { fontFamily: "var(--font-titulos)" },
+    h2: { fontFamily: "var(--font-titulos)" },
+    h3: { fontFamily: "var(--font-titulos)" },
+    h4: { fontFamily: "var(--font-titulos)" },
+    h5: { fontFamily: "var(--font-titulos)" },
+    h6: { fontFamily: "var(--font-titulos)" },
+    body1: { fontFamily: "var(--font-cuerpo)" },
+    body2: { fontFamily: "var(--font-cuerpo)" },
     allVariants: {
       color: "#ffffff", 
     },
